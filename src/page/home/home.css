@@ -1,0 +1,104 @@
+.home .max-width {
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr;
+  padding: 0 .5rem;
+  padding-top: 1rem;
+}
+
+.logo_boda {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo_boda img {
+  width: auto;
+  height: calc(90vh - 70px);
+}
+
+.home_texto {
+  padding: 1rem;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_texto h1 {
+  font-family: "Madelyn";
+  font-size: 7rem;
+  font-weight: lighter;
+}
+
+.contador {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+}
+
+.contador div div {
+  border-right: 2px solid #000;
+}
+
+.cont-last {
+  border: none !important;
+}
+
+.contador span {
+  display: block;
+  width: fit-content;
+  margin: auto;
+  font-size: 1rem;
+  font-style: italic;
+  font-family: 'IM Fell Double Pica', serif;
+}
+
+.contador h2 {
+  font-family: 'Nixie One', cursive;
+  font-weight: lighter;
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.home_texto h3 {
+  font-family: 'IM Fell Double Pica', serif;
+  font-weight: lighter;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.fecha_boda_t {
+  margin-top: 40px;
+}
+
+.f_boda {
+  margin: -20px auto;
+}
+
+.f_boda~h3 {
+  margin-top: -20px;
+}
+
+.f_boda~h3~h4 {
+  font-size: 2rem;
+  font-family: 'IM Fell Double Pica', serif;
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+
+.logos {
+  margin-top: 35px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  max-width: 500px;
+}
+
+.logos img {
+  height: 2rem;
+}
