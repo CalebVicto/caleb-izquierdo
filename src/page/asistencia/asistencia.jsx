@@ -14,9 +14,15 @@ const Asistencia = () => {
   const ListarEntrada = async () => {
     if (Cod === '') return 0
     setLoading(true)
+
     const { data } = await axios.get('https://fierce-taiga-34211.herokuapp.com/' + Cod)
-    setLoading(false)
     if (data.length === 0) return mostrarAlert()
+
+    let invitados = data[0].invitados
+    let res = await invitados.find(e => e.estado !== 1)
+    if(res !== undefined) return mostrarAlert('La asistencia ya fue confirmada!')
+
+    setLoading(false)
     setDataCod(data[0])
   }
 
@@ -43,7 +49,7 @@ const Asistencia = () => {
     if (DataCod.length === 0) return 0
     setLoading(true)
     const _data = await axios.put('https://fierce-taiga-34211.herokuapp.com/admin', DataCod)
-    if(_data.statusText !== 'OK') return mostrarAlert('Ocurrio un Error! \n Intentelo De Nuevo')
+    if (_data.statusText !== 'OK') return mostrarAlert('Ocurrio un Error! \n Intentelo De Nuevo')
     document.location.href = '/confirmado'
   }
 

@@ -11,7 +11,7 @@ var hasta = new Date(date);
 hasta.setSeconds(0)
 hasta.setMinutes(0)
 hasta.setHours(0)
-hasta.setDate(27)
+hasta.setDate(26)
 hasta.setMonth(10)
 
 const Home = () => {
