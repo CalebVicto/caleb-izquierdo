@@ -18,10 +18,10 @@ const App = () => {
 
   return (
     <Router>
+      
       <NavBar />
+
       <Switch>
-
-
         <Route path="/como-llegar">
           <Ubicacion />
         </Route>

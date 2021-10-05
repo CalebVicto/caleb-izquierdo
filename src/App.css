@@ -1,28 +1,30 @@
 /* font-family: 'IM Fell Double Pica', serif; */
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica&display=swap');
+
 @font-face {
   font-family: "Madelyn";
   src: url("./fonts/Madelyn.otf");
 }
+
 /* font-family: 'Nixie One', cursive; */
 @import url('https://fonts.googleapis.com/css2?family=Nixie+One&display=swap');
 
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: content-box;
 }
 
-.max-width{
+.max-width {
   max-width: 1200px;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-button{
+button {
   cursor: pointer;
 }
 
@@ -39,4 +41,36 @@ button{
   background-attachment: fixed;
   background-size: cover;
   overflow-y: scroll;
+}
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0 0 0 / 27%);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  border: 5px solid #4e4e4e;
+  border-left-color: transparent;
+  width: 100px;
+  height: 100px;
+  animation: spin 1s linear infinite;
+  border-radius: 50%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }

@@ -25,7 +25,7 @@ const NavBar = () => {
           <li><Link onClick={() => setBar(false)} to="/nuestra-historia" className={lk === '/nuestra-historia' ? 'link_active' : ''}>NUESTRA HISTORIA</Link></li>
           <li><Link onClick={() => setBar(false)} to="/confirmar-asistencia" className={lk === '/confirmar-asistencia' ? 'link_active' : ''}>CONFIRMAR ASISTENCIA</Link></li>
           <li><Link onClick={() => setBar(false)} to="/regalos" className={lk === '/regalos' ? 'link_active' : ''}>REGALOS</Link></li>
-          <li><Link onClick={() => setBar(false)} to="/como-llegar" className={lk === '/como-llegar' ? 'link_active' : ''} s>CÓMO LLEGAR</Link></li>
+          <li><Link onClick={() => setBar(false)} to="/como-llegar" className={lk === '/como-llegar' ? 'link_active' : ''} >CÓMO LLEGAR</Link></li>
         </ul>
       </div>
     </nav>
