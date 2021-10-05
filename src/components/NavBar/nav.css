@@ -6,7 +6,7 @@
   background: #AFA58C;
   border-top: 1px solid rgba(0, 0, 0, 0.4);
   /* border-bottom: 4px solid #000; */
-  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.91);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.91);
   font-family: 'IM Fell Double Pica', serif;
   font-weight: 800;
 }
@@ -46,8 +46,138 @@
   /* font-size: 1.1rem !important; */
 }
 
-@media (max-width: 1200px) {
-  .navbar{
-    background: red !important;
-  }  
+.nav__logo {
+  display: none;
+}
+
+.close {
+  display: none;
+}
+
+
+
+@media (max-width: 1024px) {
+  .link_active {
+    color: #AFA58C !important;
+  }
+
+  .navbar ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar ul li a {
+    font-size: 1.3rem;
+  }
+
+  .navbar {
+    background: #fff;
+    z-index: 5;
+  }
+
+  .navbar .max-width {
+    position: relative;
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav_menu {
+    position: fixed;
+    bottom: 0;
+    right: -200%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: repeat(5, 1fr);
+    transition: all .6s ease;
+  }
+
+  .nav__logo {
+    display: block;
+    height: 90%;
+    margin-left: 15px
+  }
+
+  .nav__hamb {
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 20px;
+    width: min-content;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  .nav__hamb span {
+    display: block;
+    width: 33px;
+    height: 3px;
+    margin-bottom: 7px;
+    background: #4e4e4e;
+    border-radius: 10px;
+    z-index: 1;
+  }
+
+  .close {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    color: gray;
+  }
+
+  .nav_menu.active {
+    right: 0 !important;
+  }
+
+  .logo_boda img {
+    max-width: 250px !important;
+  }
+
+  .home .max-width {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto auto !important;
+  }
+
+}
+
+@media (max-width: 530px) {
+  .home_texto h1 {
+    font-size: 4.5rem !important;
+  }
+
+  .contador span {
+    font-size: .7rem !important;
+  }
+
+  .contador h2 {
+    font-size: 2.5rem !important;
+  }
+
+  .f_boda {
+    margin: -5px auto !important;
+  }
+
+}
+
+@media (max-width: 400px) {
+
+  .home_texto {
+    padding: 0 !important;
+    padding-top: 1rem !important;
+  }
+
+  .home_texto h1 {
+    font-size: 3.7rem !important;
+  }
+
 }

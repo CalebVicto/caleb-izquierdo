@@ -1,0 +1,27 @@
+.historia .max-width {
+  width: 100%;
+  height: fit-content;
+  padding-top: 30px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-yt {
+  margin: auto;
+  max-width: 900px;
+  width: 95%;
+  height: 35vw;
+  max-height: 500px;
+}
+
+@media (max-width: 1300px) {
+  .historia .max-width {
+    padding-top: 50px;
+  }
+
+  .video-yt {
+    height: 60vw !important;
+  }
+}

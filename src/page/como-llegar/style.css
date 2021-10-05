@@ -1,0 +1,51 @@
+.ubi b,
+.ubi span {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.ubi span {
+  margin-top: 5px;
+  font-weight: normal;
+}
+
+.mapa {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 700px;
+  height: 30vw;
+  background: rgb(187, 187, 187);
+  margin-bottom: 35px;
+  border: 5px solid #AFA58C;
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+@media (max-width: 1024px) {
+  .mapa {
+    height: 40vw;
+  }
+}
+
+@media (max-width: 720px) {
+  .mapa {
+    height: 50vw;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .mapa {
+    height: 60vw;
+  }
+  .ubi .title img {
+    display: none;
+  }
+}

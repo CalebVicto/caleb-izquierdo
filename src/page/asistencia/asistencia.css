@@ -1,0 +1,194 @@
+.asistencia {
+  position: relative;
+}
+
+.fl,
+.fr {
+  position: absolute;
+  top: 0;
+  max-width: 200px;
+  z-index: 0;
+}
+
+.fl {
+  left: 0;
+}
+
+.fr {
+  right: 0;
+}
+
+.asistencia .max-width {
+  z-index: 1;
+  margin: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  padding-top: 30px;
+}
+
+.asistencia h1 {
+  font-family: "Madelyn";
+  font-size: 6.5rem;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+.input-s {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+
+.input-s span {
+  font-family: 'IM Fell Double Pica', serif;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+}
+
+.input-s input {
+  background: #AFA58C;
+  outline: none;
+  border: none;
+  height: 30px;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  color: #000;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+.asistencia button {
+  background: #AFA58C;
+  outline: none;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'IM Fell Double Pica', serif;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  font-weight: lighter;
+  height: 30px;
+  padding: 0 15px;
+}
+
+.res {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.res-s {
+  background-color: #F4EFD7;
+  width: 100%;
+  padding: 10px 5px;
+}
+
+.res-s tbody td {
+  font-family: 'IM Fell Double Pica', serif;
+  letter-spacing: 1px;
+  font-weight: 500;
+  position: relative;
+  text-align: center;
+  padding: 5px 0;
+  border-bottom: 1px solid #afa58c9c;
+}
+
+.td-name {
+  text-align: left !important;
+}
+
+.btn-conf {
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.asistencia th {
+  border-right: 1px solid #afa58c4d;
+  padding-right: 5px;
+}
+
+/* .res-s input { */
+/* width: 15px; */
+/* height: 15px; */
+/* position: absolute; */
+/* } */
+
+@media (max-width: 995px) {
+
+  .fl,
+  .fr {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 865px) {
+
+  .fl,
+  .fr {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 775px) {
+
+  .fl,
+  .fr {
+    max-width: 100px;
+  }
+}
+
+@media (max-width: 695px) {
+
+  .fl,
+  .fr {
+    max-width: 80px;
+  }
+
+  .asistencia h1 {
+    font-size: 5.5rem;
+    margin-bottom: 15px;
+  }
+
+  .input-s input {
+    max-width: 200px;
+  }
+
+  .asistencia .max-width {
+    padding-top: 75px;
+  }
+}
+
+@media (max-width: 560px) {
+  .asistencia h1 {
+    font-size: 4.5rem;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .asistencia h1 {
+    font-size: 3.7rem;
+    text-align: center;
+    line-height: 70%;
+  }
+
+}
+
+
+@media (max-width: 400px) {}
+
+@media (max-width: 300px) {
+  .asistencia h1 {
+    /* font-size: 2.9rem; */
+  }
+
+}

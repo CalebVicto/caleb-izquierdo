@@ -1,0 +1,70 @@
+.regalos .title {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.regalos .title img {
+  width: 80px;
+  height: 80px;
+}
+
+.regalos p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+  max-width: 600px;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.regalos p:nth-child(2) {
+  margin-bottom: 30px;
+}
+
+.regalos p:nth-child(3) {
+  margin-bottom: 10px;
+}
+
+.regalos p:nth-child(4) {
+  margin-bottom: 25px;
+}
+
+.regalos p img {
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+}
+
+.cuentas {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 5px;
+}
+
+.cuentas div {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: start;
+  gap: 15px;
+}
+
+.cuentas img {
+  height: 25px;
+}
+
+.cuentas span {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+}
+
+.regalos h3 {
+  margin-top: 35px;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+}

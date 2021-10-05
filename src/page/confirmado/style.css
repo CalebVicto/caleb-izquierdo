@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+
+.msg {
+  display: block;
+  color: #fff;
+  background-color: #AFA58C;
+  font-family: 'Roboto', sans-serif;
+  max-width: 600px;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+
+.regalo-btn {
+  margin-top: 30px;
+  display: flex;
+  align-items: stretch;
+  /* justify-content: center; */
+  gap: 10px;
+}
+
+.regalo-btn span {
+  display: flex;
+  padding: 0 2rem;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #AFA58C;
+  font-family: 'IM Fell Double Pica', serif;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.regalo-img {
+  width: 40px;
+}
