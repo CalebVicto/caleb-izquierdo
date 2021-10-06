@@ -18,10 +18,15 @@ const App = () => {
 
   return (
     <Router>
-      
+
       <NavBar />
 
       <Switch>
+
+        <Route path="/confirmado">
+          <Confirmado />
+        </Route>
+
         <Route path="/como-llegar">
           <Ubicacion />
         </Route>
@@ -38,9 +43,6 @@ const App = () => {
           <Asistencia />
         </Route>
 
-        <Route path="/confirmado">
-          <Confirmado />
-        </Route>
 
         <Route path="/">
           <Home />
