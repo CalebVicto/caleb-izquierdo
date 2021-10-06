@@ -3,7 +3,7 @@ import './asistencia.css'
 import fr from '../../images/flor-r.png'
 import fl from '../../images/flor-l.png'
 import axios from 'axios'
-
+import  { Redirect } from 'react-router-dom'
 
 const Asistencia = () => {
 
@@ -50,7 +50,7 @@ const Asistencia = () => {
     setLoading(true)
     const _data = await axios.put('https://fierce-taiga-34211.herokuapp.com/admin', DataCod)
     if (_data.statusText !== 'OK') return mostrarAlert('Ocurrio un Error! \n Intentelo De Nuevo')
-    document.location.href = '/confirmado'
+    return <Redirect to='/'  />
   }
 
   return (
