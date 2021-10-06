@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { Switch, Route, HashRouter } from 'react-router-dom'
 import NavBar from './components/NavBar/nav';
 import Home from './page/home/home';
 import './app.css'
@@ -17,7 +17,7 @@ const App = () => {
   }, [])
 
   return (
-    <Router>
+    <HashRouter>
 
       <NavBar />
 
@@ -49,7 +49,8 @@ const App = () => {
         </Route>
 
       </Switch>
-    </Router>
+
+    </HashRouter>
   );
 }
 
