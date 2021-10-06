@@ -3,7 +3,6 @@ import './asistencia.css'
 import fr from '../../images/flor-r.png'
 import fl from '../../images/flor-l.png'
 import axios from 'axios'
-import  { Redirect } from 'react-router-dom'
 
 const Asistencia = () => {
 
@@ -20,7 +19,7 @@ const Asistencia = () => {
 
     let invitados = data[0].invitados
     let res = await invitados.find(e => e.estado !== 1)
-    if(res !== undefined) return mostrarAlert('La asistencia ya fue confirmada!')
+    if (res !== undefined) return mostrarAlert('La asistencia ya fue confirmada!')
 
     setLoading(false)
     setDataCod(data[0])
@@ -50,7 +49,7 @@ const Asistencia = () => {
     setLoading(true)
     const _data = await axios.put('https://fierce-taiga-34211.herokuapp.com/admin', DataCod)
     if (_data.statusText !== 'OK') return mostrarAlert('Ocurrio un Error! \n Intentelo De Nuevo')
-    return <Redirect to='/'  />
+    return window.location.href = '/#/confirmado'
   }
 
   return (
